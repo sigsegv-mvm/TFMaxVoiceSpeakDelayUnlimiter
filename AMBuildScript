@@ -185,6 +185,7 @@ class ExtensionConfig(object):
       '-Wno-non-virtual-dtor',
       '-Wno-overloaded-virtual',
       '-fvisibility-inlines-hidden',
+      '-fno-sized-deallocation', # without this, we need CXXABI_1.3.9 or higher
     ]
     cxx.linkflags += ['-m32']
 
